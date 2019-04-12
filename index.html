@@ -1,0 +1,60 @@
+<DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <script src="java.js"></script>
+    <title>Jogo da Velha - Beatriz Falcão</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/style.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    
+</head>
+
+<body>
+   
+        
+    <h1>• Jogo da Velha •</h1>
+
+<div class="tabela">
+            
+            <div class="d1" id="d1" onclick="verificar1(this); vencedor(this); jogada(this);" ></div>
+            <div class="d2" id="d2" onclick="verificar2(this); vencedor(this); jogada(this);" ></div>
+            <div class="d3" id="d3" onclick="verificar3(this); vencedor(this); jogada(this);" ></div>
+    
+            <div class="d4" id="d4" onclick="verificar4(this); vencedor(this); jogada(this);" ></div>
+            <div class="d5" id="d5" onclick="verificar5(this); vencedor(this); jogada(this);" ></div>
+            <div class="d6" id="d6" onclick="verificar6(this); vencedor(this); jogada(this);" ></div>
+        
+            <div class="d7" id="d7" onclick="verificar7(this); vencedor(this); jogada(this);" ></div>
+            <div class="d8" id="d8" onclick="verificar8(this); vencedor(this); jogada(this);" ></div>
+            <div class="d9" id="d9" onclick="verificar9(this); vencedor(this); jogada(this);" ></div>
+        </div>
+
+        <div class="fundo"></div>
+
+        <div class="nomejogadores">
+                Nome dos Jogadores: <br>
+                Jogador X:<br><input type="text" id="Nome1" style="width: 250px; height: 30px;"><br>
+                Jogador O:<br><input type="text" id="Nome2" style="width: 250px; height: 30px;" ><br><br>
+        </div>
+        
+        <button style ="width: 150px; height: 150px" onclick="jogar();" id="botaojogar">Jogar</button>
+        <button style ="width: 75px; height: 75px" onclick="zerar()" id="botaozerarpainel">Zerar Painel</button>
+        <button style ="width: 75px; height: 75px" onclick="placar();" id="botaoplacar">Placar</button>
+
+        <p id="textos"></p>
+        
+
+
+        <h2>--Regras do Jogo--</h2>
+        <ul>
+            <li>O tabuleiro  é uma matriz  de três linhas por três colunas.</li>
+            <li>Dois jogadores escolhem uma marcação cada um, geralmente um círculo (O) e um xis (X).</li> 
+            <li>Os jogadores jogam alternadamente, uma marcação por vez, numa lacuna que esteja vazia.</li>
+            <li>O objectivo é conseguir três círculos ou três xis em linha, quer horizontal, vertical ou diagonal, <br>
+            e ao mesmo tempo, quando possível, impedir o adversário de ganhar na próxima jogada. </li>
+            <li>Quando um jogador conquista o objetivo, costuma-se riscar os três símbolos.</li>
+        </ul>
+
+</body>
+
+</html>
