@@ -3,9 +3,8 @@ var nj2 = null;
 var pj1 = 0;  
 var pj2 = 0;
 var s = 2 ;
-var c1,c2,c3,c4,c5,c6,c7,c8,c9;
+var c1 = null; c2 = null;c3 = null; c4 = null; c5 = null; c6 = null;c7 = null;c8 = null;c9 = null;
 var jogadas = 0;
-
 
 function jogar() {
   nj1 = document.getElementById('Nome1').value;
@@ -25,7 +24,7 @@ function jogar() {
 }
 
 function jogada(elemento){
-  if(elemento.hasAttribute('style')== false){
+  if(elemento.hasAttribute('style','background-color: #0A4029') == false){
     if(s == 0){
       elemento.setAttribute('style','background-color: #0A4029') 
       elemento.innerHTML = "<img src = image1.jpg>"
@@ -63,10 +62,6 @@ if(s == 0 || s == 1){
   }
 }
 
-function placar(){
-  document.getElementById('textos').innerHTML = "Placar: "+nj1 +" - "+pj1+" X "+nj2+" - "+pj2;
-}
-
 function velha(){
   if(jogadas == 9){
     document.getElementById('textos').innerHTML = "DEU VELHA!!" 
@@ -84,108 +79,97 @@ function velha(){
 }
 
 function zerar(){
-  s = 2
-  document.getElementById('d1').innerHTML = ""
-  document.getElementById('d2').innerHTML = ""
-  document.getElementById('d3').innerHTML = ""
-  document.getElementById('d4').innerHTML = ""
-  document.getElementById('d5').innerHTML = ""
-  document.getElementById('d6').innerHTML = ""
-  document.getElementById('d7').innerHTML = ""
-  document.getElementById('d8').innerHTML = ""
-  document.getElementById('d9').innerHTML = ""
-  document.getElementById('d1').removeAttribute('style');
-  document.getElementById('d2').removeAttribute('style');
-  document.getElementById('d3').removeAttribute('style');
-  document.getElementById('d4').removeAttribute('style');
-  document.getElementById('d5').removeAttribute('style');
-  document.getElementById('d6').removeAttribute('style');
-  document.getElementById('d7').removeAttribute('style');
-  document.getElementById('d8').removeAttribute('style');
-  document.getElementById('d9').removeAttribute('style');
+  href="index.html"
   fimjogo();
 }
-
 function fimjogo(){
-  if(jogadas == 'vitoria' || jogadas == 9){
   c1 = ""; c2 = ""; c3 = ""; c4 = ""; c5 = "";c6 = "";c7 = "";c8 = "";c9 = "";
   document.getElementById('textos').innerHTML = "";
   s = 2;
   jogadas = "";
-  }
 }
 
 function verificar1(){
+  if(c1 == null){
     if(s == 0){
     c1 = 'x';
     } else if(s == 1){
     c1 = 'o';
     }
   }
-
+}
 function verificar2(){
+  if(c2 == null){
     if(s == 0){
     c2 = 'x'
     } else if(s == 1){
     c2 = 'o'
     }
   } 
-
+}
 function verificar3(){
+  if(c3 == null){
     if(s == 0){
     c3 = 'x'
     } else if(s == 1){
     c3 = 'o'
     }
   }
-
+}
 function verificar4(){
+  if(c4 == null){
     if(s == 0){
     c4 = 'x'
     } else if(s == 1){
     c4 = 'o'
     }
   }
-
+}
 function verificar5(){
+  if(c5 == null){
     if(s == 0){
     c5 = 'x'
     } else if(s == 1){
     c5 = 'o'
     }
   }
-
+}
 function verificar6(){
+  if(c6 == null){
     if(s == 0){
     c6 = 'x'
     } else if(s == 1){
     c6 = 'o'
     }
   }
-
+}
 function verificar7(){
-
+  if(c7 == null){
     if(s == 0){
     c7 = 'x'
     } else if(s == 1){
     c7 = 'o'
     }
   }
-
+}
 function verificar8(){
-  
+  if(c8 == null){ 
     if(s == 0){
     c8 = 'x'
     } else if(s == 1){
     c8 = 'o'
     }
   }
-
+}
 function verificar9(){
- 
+  if(c9 == null){
     if(s == 0){
     c9 = 'x'
     } else if(s == 1){
     c9 = 'o'
     }
   }
+}
+ //function placar(){
+ //document.getElementById('textos').innerHTML = "Placar: "+nj1 +" - "+pj1+" X "+nj2+" - "+pj2;
+//}
